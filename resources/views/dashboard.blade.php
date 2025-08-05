@@ -9,10 +9,30 @@
                 <div class="col-md-6 mb-4 mb-md-0">
                     <h1 class="display-5 fw-bold mb-3">Welcome to the place where your ideas come alive.</h1>
                     <h1 class="display-5 fw-bold mb-3">Dear <span class="user-name">{{ Auth::user()->name }}</span></h1>
-                    <p class="lead text-secondary">Hope you’re having a great day. Let’s make it productive!</p>
+                    <p class="para lead">Hope you’re having a great day. Let’s make it productive!</p>
                 </div>
-                <div class="col-md-5">
+
+                <div class="col-md-4">
                     <img src="{{ asset('images/img1.webp') }}" alt="Welcome image" class="img-fluid">
+                </div>
+
+                <div class="">
+                    <a href="{{ route('timetable') }}" class="btn btn1">Go to Timetable</a>
+                    <a href="{{ route('todo') }}" class="btn btn2">Check To-Do List</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- progress card -->
+        <div class="container my-5">
+            <div class="card shadow rounded mx-auto text-center" style="max-width: 700px;">
+                <div class="card-body">
+                    <h2 class="card-title mb-3"><i class="fa-solid fa-chart-line"></i> Weekly Progress</h2>
+                    <p>You've completed <strong>7</strong> out of <strong>10</strong> tasks this week!</p>
+                    <div class="progress" style="height: 20px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;">70%</div>
+                    </div>
                 </div>
             </div>
         </div>

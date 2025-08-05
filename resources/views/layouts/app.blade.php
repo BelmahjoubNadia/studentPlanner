@@ -37,7 +37,7 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,7 +59,7 @@
                         <li class="nav-item">
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
-                                <button type="submit" class="btn btn-link nav-link text-danger p-0" style="display:inline;">
+                                <button type="submit" class="btnn btn-link nav-link text-danger p-0" style="display:inline;">
                                     Logout
                                 </button>
                             </form>
